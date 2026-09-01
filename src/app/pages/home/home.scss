@@ -291,3 +291,53 @@
   }
 
 }
+
+// ========================================
+// PROJECTS PREVIEW
+// ========================================
+
+.projects-preview {
+  padding: 5rem 0;
+
+  border-top: 1px solid var(--color-border);
+}
+
+.projects-preview__grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 1rem;
+}
+
+.projects-preview__action {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 2.5rem;
+}
+
+
+// ========================================
+// MOBILE
+// ========================================
+
+@media (max-width: 1000px) {
+
+  .projects-preview__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .projects-preview {
+    padding: 4rem 0;
+  }
+
+  .projects-preview__grid {
+    grid-template-columns: 1fr;
+  }
+
+}
